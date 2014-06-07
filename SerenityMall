@@ -584,7 +584,7 @@ print("none                        ")
 end
 -- Update Function
 function update()
-checkForUpdates("http://pastebin.com/raw.php?i=VrUTzsU8")
+checkForUpdates("https://raw.githubusercontent.com/Landathradon/Lua-Programs/master/SerenityMall")
 end
 local function downloadFiles(url, path)
 for i = 1, 3 do
@@ -610,7 +610,7 @@ for i = 1, 3 do
         print("There's an update!!!")
         sleep(1)
         if not fs.exists("startup") then
-         downloadFiles("http://pastebin.com/raw.php?i=VrUTzsU8", "startup")
+         downloadFiles("https://raw.githubusercontent.com/Landathradon/Lua-Programs/master/SerenityMall", "startup")
         end
         shell.run("startup")
    end
