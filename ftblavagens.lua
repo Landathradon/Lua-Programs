@@ -22,13 +22,13 @@ while true do
 	term.setTextColor(colors.orange)
 	print(timer)
 
+	sleep(0.1)
+	term.clear()
+	
 	if time < 6 and time > 18 then -- if it's daylight then send a redstone output
 		rs.setOutput("back", true)
 	else
 		rs.setOutput("back", false)
 	end
 	
-	sleep(0.1)
-	term.clear()
-
 end
