@@ -6,7 +6,7 @@ local warning = "*** It is recommended to have this computer running\n    to red
 while true do
 
 	local timer = textutils.formatTime(time, true)
-	local timeLenght = String.len(timer)
+	local timeLenght = string.len(timer)
 	local newW = math.floor(w/2 - timeLenght/2)
 	local newH = h/2
 
@@ -27,5 +27,8 @@ while true do
 	else
 		rs.setOutput("back", false)
 	end
+	
+	sleep(0.1)
+	term.clear()
 
 end
